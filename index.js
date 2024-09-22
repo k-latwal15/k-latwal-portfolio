@@ -90,6 +90,7 @@ const portfolioData = {
     "projects": [
         {
             "name": "AdaniOne - Airport Food & Beverages",
+            "duration": "November 2023 - Present",
             "bulletPoints": [
                 "Developing a Multi-Carting feature enabling users to order from multiple outlets in a single transaction.",
                 "Building a Progressive Web Application (PWA) for airport kiosk systems.",
@@ -102,6 +103,7 @@ const portfolioData = {
         },
         {
             "name": "AdaniOne - Airport Car-Parking",
+            "duration": "May 2023 - October 2023",
             "bulletPoints": [
                 "Developed a real-time car parking reservation web app for 7+ Indian airports.",
                 "Built a custom Sitecore widget for embedding dynamic forms on static web pages.",
@@ -112,15 +114,15 @@ const portfolioData = {
         },
         {
             "name": "AdaniOne - Airport Cab-Booking",
+            "duration": "September 2022 - June 2023",
             "bulletPoints": [
-                "Integrated Google’s Query Autocompletion and Place Details API for an enhanced location input interface.",
+                "Integrated Google's Query Autocompletion and Place Details API for an enhanced location input interface.",
                 "Applied debouncing methods to reduce redundant network calls and optimize performance.",
                 "Crafted SEO-friendly UIs with server-side rendering using Next.js and React, ensuring fast load times.",
                 "Implemented local data storage and caching with local forage to minimize API reliance and boost app speed."
             ],
             "link": "https://www.adanione.com/cab-booking"
         },
-
     ],
     experience: [
         {
@@ -204,10 +206,11 @@ function renderProjects() {
         projectItem.className = 'project-item';
         projectItem.innerHTML = `
   <h3>${project.name}</h3>
+  <p class="project-duration">${project.duration}</p>
   <ul>
     ${project.bulletPoints.map(point => `<li>${point}</li>`).join('')}
   </ul>
-  <a href="${project.link}" target="_blank" rel="noopener noreferrer">View Project</a>
+  <a href="${project.link}" target="_blank" rel="noopener noreferrer">View Project &rarr;</a>
 `;
         projectsSection.appendChild(projectItem);
     });

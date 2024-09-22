@@ -29,6 +29,10 @@ body {
     padding: 0 20px;
 }
 
+h2 {
+    text-decoration: underline;
+}
+
 section {
     padding: 120px 0;
     transition: background-color 0.5s ease;
@@ -309,6 +313,10 @@ section {
     background: linear-gradient(135deg, #F4D03F 0%, #16A085 100%);
 }
 
+.project-duration {
+    margin-bottom: 8px
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -431,6 +439,10 @@ section {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+}
+
+.timeline-date {
+    margin-bottom: 8px;
 }
 
 .left {
