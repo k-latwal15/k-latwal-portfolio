@@ -13,7 +13,7 @@ const portfolioData = {
         title: "Software Developer | Gurgaon, India",
         description: "Specializing in React.js, Next.js, and modern frontend technologies",
         imageUrl: "./assets/self-photo.jpg",
-        resumeLink: "./assets/kamal.latwal.blr.2.2.3.pdf"
+        resumeLink: "./assets/kamal.latwal.blr.2.2.4.pdf"
     },
     skills: [
         {
@@ -35,6 +35,11 @@ const portfolioData = {
             name: "CSS/SCSS",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
             description: "Styling and layout of web applications"
+        },
+        {
+            name: "JavaScript",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            description: "Core programming language for web development"
         },
         {
             name: "TypeScript",
@@ -85,7 +90,14 @@ const portfolioData = {
             name: "Webpack",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
             description: "Module bundler for JavaScript applications"
-        }
+        },
+        {
+            name: "Problem Solving",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg",
+            description: "Analytical thinking and creative solution development"
+        },
+
+
     ],
     "projects": [
         {
@@ -148,10 +160,11 @@ const portfolioData = {
         }
     ],
     contact: {
-        email: "k.latwal15@gmail.com",
+
         socialLinks: [
+            { platform: "Email", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg", url: "mailto:k.latwal15@gmail.com" },
             { platform: "LinkedIn", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg", url: "https://www.linkedin.com/in/k-latwal15" },
-            { platform: "GitHub", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg", url: "https://github.com/k-latwal15" }
+            { platform: "GitHub", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg", url: "https://github.com/k-latwal15" },
         ]
     }
 };
@@ -242,7 +255,6 @@ function renderContact() {
     contactSection.innerHTML = `
 <div class="container">
   <h2>Get in Touch</h2>
-  <p class="contact-email">${portfolioData.contact.email}</p>
   <div class="social-links">
     ${portfolioData.contact.socialLinks.map(link => `
       <a href="${link.url}" class="social-link">
