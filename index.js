@@ -13,7 +13,7 @@ const portfolioData = {
         title: "Software Developer | Gurgaon, India",
         description: "Specializing in React.js, Next.js, and modern frontend technologies",
         imageUrl: "./assets/self-photo.jpg",
-        resumeLink: "./assets/kamal.latwal.blr.2.2.4.pdf"
+        resumeLink: "./assets/kamal.latwal.fullstack.pdf"
     },
     skills: [
         {
@@ -101,7 +101,7 @@ const portfolioData = {
     ],
     "projects": [
         {
-            "name": "AdaniOne - Airport Food & Beverages",
+            "name": "AdaniOne - Food & Beverages",
             "duration": "November 2023 - Present",
             "bulletPoints": [
                 "Developing a Multi-Carting feature enabling users to order from multiple outlets in a single transaction.",
@@ -114,19 +114,18 @@ const portfolioData = {
             "link": "https://www.adanione.com/csmia-mumbai-airport/food-beverages"
         },
         {
-            "name": "AdaniOne - Airport Car-Parking",
-            "duration": "May 2023 - October 2023",
+            "name": "Adanione - Scan & Pay",
+            "duration": "May 2023 - September 2023",
             "bulletPoints": [
-                "Developed a real-time car parking reservation web app for 7+ Indian airports.",
-                "Built a custom Sitecore widget for embedding dynamic forms on static web pages.",
-                "Integrated Google Geocoder API for automatic state and city details based on postal code.",
-                "Applied UX principles and a config-driven UI with adaptive layouts for mobile and desktop platforms."
+                "Developed a Scan & Pay system enabling 8,000+ daily transactions at airports via QR codes.",
+                "Created a seamless user onboarding flow with QR code scanning, increasing traffic from airport services by 10%.",
+                "Integrated secure payment gateways and real-time transaction status updates, reducing checkout times significantly."
             ],
-            "link": "https://www.adanione.com/parking"
+            "link": "https://www.adanione.com/how-scan-and-pay-works"
         },
         {
             "name": "AdaniOne - Airport Cab-Booking",
-            "duration": "September 2022 - June 2023",
+            "duration": "November 2022 - June 2023",
             "bulletPoints": [
                 "Integrated Google's Query Autocompletion and Place Details API for an enhanced location input interface.",
                 "Applied debouncing methods to reduce redundant network calls and optimize performance.",
@@ -135,6 +134,17 @@ const portfolioData = {
             ],
             "link": "https://www.adanione.com/cab-booking"
         },
+        {
+            "name": "AdaniOne - Car-Parking",
+            "duration": "April 2022 - October 2022",
+            "bulletPoints": [
+                "Developed a real-time car parking reservation web app for 7+ Indian airports.",
+                "Built a custom Sitecore widget for embedding dynamic forms on static web pages.",
+                "Integrated Google Geocoder API for automatic state and city details based on postal code.",
+                "Applied UX principles and a config-driven UI with adaptive layouts for mobile and desktop platforms."
+            ],
+            "link": "https://www.adanione.com/parking"
+        }
     ],
     experience: [
         {
@@ -142,10 +152,11 @@ const portfolioData = {
             "position": "Software Developer",
             "duration": "April 2022 - Present",
             "bulletPoints": [
-                "Contributed to the AdaniOne platform, serving over 4 million+ monthly active users.",
-                "Built the Food & Beverages service and kiosk PWA for AdaniOne users, enhancing customer experience in airport services.",
-                "Developed the airport Cab-booking and Car-parking services for both mobile and desktop from scratch.",
-                "Enhanced code quality and maintainability by implementing best practices using SonarQube and ESLint."
+                "Improved scalability of the AdaniOne SuperApp for airport ecosystem, serving over 4 million+ monthly active users.",
+                "Developed & Led Food & Beverages service for airport users, driving a 15% increase in food orders via kiosk and mobile platforms.",
+                "Built Cab-booking & Car-parking services, handling over 40,000+ monthly transactions, improving airport service efficiency.",
+                "Enhanced code quality using SonarQube and ESLint, leading to a 20% reduction in technical debt.",
+                "Integrated caching & debouncing mechanisms, reducing network calls and improving overall performance."
             ]
         },
         {
@@ -153,9 +164,9 @@ const portfolioData = {
             "position": "Programmer Analyst Trainee",
             "duration": "June 2021 - November 2021",
             "bulletPoints": [
-                "Worked for The Clorox Company to build and maintain dynamic, responsive web applications.",
-                "Ensured seamless user interactions within IAM and ServiceNow portals.",
-                "Diagnosed, debugged, and provided bug fixes for software problems."
+                "Developed and optimized custom web applications for ServiceNow using JavaScript, improving user workflows and performance",
+                "Diagnosed and resolved critical software issues, reducing downtime and enhancing system stability",
+                "Implemented performance enhancements, increasing user interaction efficiency."
             ]
         }
     ],
@@ -190,7 +201,7 @@ function renderHero() {
 <h1>${portfolioData.hero.name}</h1>
 <p>${portfolioData.hero.title}</p>
 <p>${portfolioData.hero.description}</p>
-<a href="${portfolioData.hero.resumeLink}"  target="_blank" class="resume-btn">View Resume</a>
+<a href="${portfolioData.hero.resumeLink}" download  target="_blank" class="resume-btn">View Resume</a>
 `;
 }
 
