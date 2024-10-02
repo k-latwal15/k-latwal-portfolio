@@ -13,7 +13,7 @@ const portfolioData = {
         title: "Software Developer | Gurgaon, India",
         description: "Specializing in React.js, Next.js, and modern frontend technologies",
         imageUrl: "./assets/self-photo.jpg",
-        resumeLink: "./assets/kamal.latwal.fullstack.pdf"
+        resumeLink: "./assets/kamal-latwal-resume.pdf"
     },
     skills: [
         {
